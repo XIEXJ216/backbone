@@ -1,0 +1,15 @@
+/* 全局样式 */ 
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+/* 清除浮动 */
+.clearfix:after {
+	content: '';
+	clear: both;
+	display: block;
+} 
+#app {
+	display: block!important;
+}

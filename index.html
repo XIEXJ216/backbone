@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, width=device-width">
+</head>
+<body>
+
+	<!-- 定义容器 -->
+	<div id="app">
+		<section class="list" id="list">
+			<header class="header clear">
+				<h1>看图</h1>
+				<div class="login">
+					<span class="log">登录</span>
+					<span >|</span>
+					<span >注册</span>
+				</div>
+			</header>
+			
+			<div class="banner" id="banner">
+				<img src="img/ban4.png" alt=""/>
+				
+			</div>
+			<div class="search">
+				<input type="text" placeholder="搜索你想要的图片">
+				<span>搜索</span>
+			</div>
+
+			
+			<ul class="nav clear">
+				<li data-type='0'>摄影</li>
+				<li data-type='1'>明星</li>
+				<li data-type='2'>壁纸</li>
+				<li data-type='3'>宠物</li>
+				<li data-type='4'>动漫</li>
+				<li data-type='5'>风景</li>
+				<li data-type='6'>头像</li>
+				<li data-type='7'>人物</li>
+			</ul>
+			
+			<div class="image-container">
+				<div class="left-container"></div>
+				<div class="right-container"></div>
+			</div>
+
+			<div class="go-top">返回顶部</div>
+		</section>
+
+		<section class="layer" id="layer"></section>
+
+	</div>
+
+	<!-- 定义大图页模板 -->
+	<script type="text/template" id="tpl_layer">
+		<div class="image-container" style="<%=style%>">
+			<img src="<%=src%>" alt=""/>
+		</div>
+		<div class="header">
+			<div class="go-back">
+				<span class="arrow">
+					<span class="arrow black"></span>
+				</span>
+			</div>
+			<h1><%=title%></h1>
+
+		</div>
+	</script>
+	
+	<script type="text/javascript" src="js/lib/require.js" data-main="js/app.js"></script>
+
+</body>
+</html>

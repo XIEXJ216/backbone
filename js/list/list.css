@@ -1,0 +1,157 @@
+.list{
+	position: relative; 
+	z-index: 1;
+}
+
+.list .header{
+	height: 30px;
+}
+
+.list .header h1{
+	font-size: 22px;
+	color: #22A900;
+	float: left;
+	line-height: 30px;
+	padding-left: 10px;
+
+}
+
+
+.list .login{
+	float: right;
+	font-size: 14px;
+	height: 30px;
+	line-height: 30px;
+	margin-right: 10px;
+	color: #666;
+
+}
+
+.list .login span.log{
+	color:#22A900 ;
+}
+
+.list .banner{
+	width: 100%;
+	position: relative;
+	z-index: 1;
+	height: 140px;
+}
+.list .banner img{
+	width: 100%;
+	height: 100%;
+	
+}
+
+
+/*=====搜索框=====*/
+
+.list .search{
+	display: -webkit-box;
+	font-size: 0;
+	padding: 0 10px;
+	position: relative;
+	z-index: 2;
+	top: -15px;
+}
+
+.list .search input{
+	-webkit-box-flex:1;
+	display: block;
+	padding: 11.5px;
+	font-size: 12px;
+	border: 1px solid #22A900;
+	outline: none;
+}
+.list .search span{
+	display: inline-block;
+	width: 40px;
+	text-align: center;
+	padding: 10px;
+	background: #22A900;
+	font-size: 14px;
+	color: #fff;
+}
+
+.list .nav li{
+	float: left;
+	width: 22%;
+	height: 35px;
+	line-height: 35px;
+	font-size: 12px;
+	text-align: center;
+	margin: 1.5%;
+	border-radius: 5px;
+	background: #EADFBF;
+	color: #A8810D;
+	
+}
+
+.list .nav li:nth-child(2){
+	background: #EED9BB;
+	color: #8F724D;
+}
+
+.list .nav li:nth-child(3){
+	background: #EDDBCC;
+	color: #AD6834;
+}
+
+.list .nav li:nth-child(4){
+	background: #E7C0C0;
+	color: #924545;
+}
+
+.list .nav li:nth-child(5){
+	background: #B7E2EF;
+	color: #518FA2;
+}
+
+.list .nav li:nth-child(6){
+	background: #D6E7C0;
+	color: #7D9B56;
+}
+
+.list .nav li:nth-child(7){
+	background: #C1E7C0;
+	color: #51964F;
+}
+
+.list .nav li:nth-child(8){
+	background: #B8D2FB;
+	color: #617CA9;
+}
+
+.list .image-container {
+	border: 1px solid transparent;
+	display: -webkit-box;
+}
+
+.list .left-container,
+.list .right-container{
+	-webkit-box-flex:1;
+}
+.list .left-container {
+	padding: 6px 3px 6px 6px;
+}
+.list .right-container {
+	padding: 6px 6px 6px 3px;
+}
+.list .image-container img {
+	width: 100%;
+	display: block;
+	margin-bottom: 6px;
+}
+
+.go-top{
+	font-size: 12px;
+	width: 24px;
+	height: 24px;
+	background: rgba(0,0,0,.5);
+	color: #fff;
+	position: fixed;
+	bottom: 100px;
+	right: 30px;
+	padding: 5px 5px 12px 5px;
+	display: none;
+}
